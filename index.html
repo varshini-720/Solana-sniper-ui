@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solana Sniper</title>
+  <script src="connect.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body style="font-family: sans-serif; padding: 20px;">
+  <h2>Solana Sniper</h2>
+
+  <input type="text" id="listingUrl" placeholder="Paste Magic Eden or Tensor URL" style="width: 100%; padding: 8px;" />
+  <button onclick="extractMint()" style="margin-top: 10px;">Extract Mint Address</button>
+
+  <input type="text" id="mintAddress" placeholder="Mint address will appear here" readonly style="width: 100%; margin-top: 10px; padding: 8px;" />
+
+  <button onclick="snipe()" style="margin-top: 20px; padding: 10px 20px;">Snipe Now</button>
+</body>
+</html>
